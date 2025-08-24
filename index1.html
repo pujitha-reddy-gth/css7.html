@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .box >.j{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            animation-name: suntask;
+            border-radius: 100%;
+            position: absolute;
+            z-index: 10;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes suntask{
+            from{
+                margin-top: 30px;
+                transform: translateX(100px);
+
+            }
+            to{
+                margin-left: 20px;
+                margin-inline-end: 100px;
+            }
+
+
+        }
+        .box >.s{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 100%;
+            position: relative;
+            z-index: 20;
+
+        }
+        .box{
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="box">
+        <div class="j"></div>
+        <div class="s"></div>
+    </div>
+</body>
+</html>
